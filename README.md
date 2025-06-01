@@ -1,69 +1,70 @@
-# CodeCollab
+# Getting Started with Create React App
 
-CodeCollab is a cutting-edge real-time collaborative coding platform designed specifically for Python developers. It enables multiple users to simultaneously edit Python code in a shared environment, paired with integrated real-time chat functionality to facilitate seamless collaboration and communication. Featuring Google OAuth authentication and customizable avatars, CodeCollab leverages modern frontend React architecture combined with Firebase backend services to provide a responsive and intuitive user experience.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## Features
+In the project directory, you can run:
 
-- **Real-time Collaborative Python Editor**  
-  Users can concurrently edit the same Python code, with every change instantly synced across all connected clients via Firebase Realtime Database.
+### `npm start`
 
-- **Integrated Real-time Chat**  
-  Communicate with collaborators instantly within the same interface using the built-in chatbox powered by Firebase.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- **User Authentication**  
-  Secure authentication through Google OAuth, with fallback guest access to ensure flexibility in onboarding.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- **Customizable Avatars and Usernames**  
-  Personalize your identity by choosing from a selection of avatars and setting a unique username.
+### `npm test`
 
-- **Responsive and Modern UI**  
-  Developed using React functional components and hooks, ensuring a fast and fluid user experience across devices.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
----
+### `npm run build`
 
-## Technologies Used
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- **Frontend:** React.js, React Hooks, CSS Modules  
-- **Backend:** Firebase Realtime Database, Firebase Authentication (Google OAuth)  
-- **Real-time Data Sync:** Firebase SDK for seamless multi-user collaboration  
-- **State Management:** React Context and useState for efficient UI state handling  
-- **Routing:** React Router for future scalability and navigation  
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
----
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Architecture Overview
+### `npm run eject`
 
-1. **Authentication Layer**  
-   Users authenticate via Google OAuth or opt for guest access. Authentication state is maintained by Firebase Authentication.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-2. **User Profile Setup**  
-   After signing in, users select an avatar and username, which are stored in Firebase Realtime Database to represent user identity in the collaboration space.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-3. **Collaborative Code Editor**  
-   A shared Python code editor component listens and pushes code changes in real time to Firebase, ensuring all participants view the latest updates simultaneously.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-4. **Chat Module**  
-   Chat messages are saved in Firebase and instantly broadcasted to all collaborators, enabling real-time conversation alongside coding.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-5. **Future Room Management**  
-   Planned support for multiple isolated collaboration rooms, allowing separate coding sessions to run concurrently.
+## Learn More
 
----
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Getting Started
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Prerequisites
+### Code Splitting
 
-- Node.js (v14 or higher recommended)  
-- npm or yarn package manager  
-- Firebase account with a project configured for Realtime Database and Authentication
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Installation
+### Analyzing the Bundle Size
 
-1. Clone the repository:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-```bash
-git clone https://github.com/yourusername/codecollab.git
-cd codecollab
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
